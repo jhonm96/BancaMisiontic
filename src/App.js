@@ -11,6 +11,10 @@ import { Dashboard } from "./components/pages/Dashboard";
 import UsuarioInterno from "./components/pages/UsuarioInterno";
 import Qr from "./components/bvpQr/bvpQr";
 import QrForm from "./components/bvpQrForm/bvpQrForm";
+import BancaCard from "./components/BancaVirtualUser/BancaCard/BancaCard";
+import CrearFidu from "./components/BVCCrearFiduCuenta/CrearFiducuenta";
+import CerrarFidu from "./components/BVCCancelarCuenta/CancelarFiducuenta";
+import TransFidu from "./components/BVCTransferir/TransfDineroFiduCuenta";
 
 const App = () => {
   return (
@@ -24,6 +28,10 @@ const App = () => {
         <Route path="/Dashboard" element={<Dashboard />} />
         <Route path="/Clientes" element={<Clientes />} />
         <Route path="/qr" element={<Qr />} />
+        <Route path="/BancaVirtual" element={<BancaCard />} />
+        <Route path="/CrearCuentaFiduciaria" element={<CrearFidu />} />
+        <Route path="/CerrarCuentaFiduciaria" element={<CerrarFidu />} />
+        <Route path="/Transferencias" element={<TransFidu />} />
         <Route path="/QrForm" element={<QrForm />} />
         <Route path="/UsuarioInterno" element={<UsuarioInterno />} />
       </Routes>
