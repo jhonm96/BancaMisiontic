@@ -4,10 +4,13 @@ import Navbar from "./components/navegacion/Navbar";
 import Footer from "./components/footer/Footer";
 import Login from "./components/pages/Login";
 import Home from "./components/pages/Home";
-import Registrarse from "./components/pages/Registrarse";
+import RegistroClientes from "./components/RegistroClientes/RegistroClientes";
+import AddDatosPersonales from "./components/DatosPersonalesCliente/AddDatosPersonales";
 import Clientes from "./components/pages/Clientes";
 import { Dashboard } from "./components/pages/Dashboard";
 import UsuarioInterno from "./components/pages/UsuarioInterno";
+import Qr from "./components/bvpQr/bvpQr";
+import QrForm from "./components/bvpQrForm/bvpQrForm";
 
 const App = () => {
   return (
@@ -16,9 +19,12 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Login" element={<Login />} />
-        <Route path="/Registrarse" element={<Registrarse />} />
+        <Route path="/RegistroClinetes" element={<RegistroClientes/>} />
+        <Route path="/RegistroDatosPersonales" element={<AddDatosPersonales/>} />
         <Route path="/Dashboard" element={<Dashboard />} />
         <Route path="/Clientes" element={<Clientes />} />
+        <Route path="/qr" element={<Qr />} />
+        <Route path="/QrForm" element={<QrForm />} />
         <Route path="/UsuarioInterno" element={<UsuarioInterno />} />
       </Routes>
       <Footer />
